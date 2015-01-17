@@ -1,0 +1,25 @@
+{
+  "name": "hapi-nudge",
+  "description": "A Hapi plugin to prevent Heroku dynos from sleeping.",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/christophercliff/hapi-nudge"
+  },
+  "scripts": {
+    "style": "./node_modules/.bin/crispy ./lib/ ./test/",
+    "test": "npm run style && ./node_modules/.bin/mocha --reporter spec -r should --grep ''"
+  },
+  "main": "./lib/",
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "wreck": "^5.1.0"
+  },
+  "devDependencies": {
+    "bluebird": "^2.7.1",
+    "crispy": "^3.1.1",
+    "hapi": "^8.1.0",
+    "mocha": "^2.1.0",
+    "should": "^4.6.0"
+  }
+}
